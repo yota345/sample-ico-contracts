@@ -1,0 +1,17 @@
+{
+  "startBlock": 900000,
+  "icoStartTime": 1514965330,
+  "endBlock": 1000000,
+  "cap": 12500,
+  "tokenCap": 50000000,
+  "initialAlisFundBalance": 25000000,
+  "goal": 11666,
+  "rate": {
+    "base": 2000
+  },
+  "whiteList": [
+    "0x627306090abab3a6e1400e9345bc60c78a8bef57",
+    "0xf17f52151ebef6c7334fad080c5704d77216b732",
+    "0xc5fdf4076b8f3a5357c5e395ab970b5b54098fef"
+  ]
+}
