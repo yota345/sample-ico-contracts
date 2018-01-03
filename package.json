@@ -1,0 +1,17 @@
+{
+  "name": "NumataCoin",
+  "version": "0.0.1",
+  "description": "Sample Token for ICO project",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yota Numata",
+  "license": "PRIVATE USUAGE ONLY",
+  "dependencies": {
+    "zeppelin-solidity": "^1.5.0"
+  }
+}
