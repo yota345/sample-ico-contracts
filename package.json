@@ -2,17 +2,31 @@
   "name": "NumataCoin",
   "version": "0.0.1",
   "description": "Sample Token for ICO project",
-  "main": "truffle-config.js",
+  "main": "truffle.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle test",
+    "lint:sol": "solium --dir ./contracts",
+    "lint:js": "eslint . --fix",
+    "lint": "npm run lint:js && npm run lint:sol",
+    "compile": "rm -rf ./build/* && truffle compile",
+    "clean": "rm -rf ./build/*",
+    "rpc": "npm run testrpc -a 3 -i 10 -u 0 -u 1 -u 2",
+    "deploy": "npm run clean && npm run compile && truffle deploy --network development"
   },
-  "author": "Yota Numata",
+  "author": "Yota Numata <artsplaying.for496@gmail.com>",
   "license": "PRIVATE USUAGE ONLY",
   "dependencies": {
     "fs": "0.0.1-security",
     "zeppelin-solidity": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "solium": "^1.1.0",
+    "truffle": "^4.0.4"
   }
 }
