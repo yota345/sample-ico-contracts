@@ -7,13 +7,13 @@
     "test": "test"
   },
   "scripts": {
-    "test": "truffle test",
+    "test": "truffle test --network test",
     "lint:sol": "solium --dir ./contracts",
     "lint:js": "eslint . --fix",
     "lint": "npm run lint:js && npm run lint:sol",
     "compile": "rm -rf ./build/* && truffle compile",
     "clean": "rm -rf ./build/*",
-    "rpc": "npm run testrpc -a 3 -i 10 -u 0 -u 1 -u 2",
+    "rpc": "testrpc -a 3 -i 10 -u 0 -u 1 -u 2",
     "deploy": "npm run clean && npm run compile && truffle deploy --network development"
   },
   "author": "Yota Numata <artsplaying.for496@gmail.com>",
@@ -26,6 +26,8 @@
     "eslint": "^4.14.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
+    "ethereumjs-testrpc": "^6.0.3",
+    "solgraph": "^0.2.6",
     "solium": "^1.1.0",
     "truffle": "^4.0.4"
   }
