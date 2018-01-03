@@ -9,7 +9,7 @@ import 'zeppelin-solidity/contracts/token/BurnableToken.sol';
  * @title NumataToken
  * @dev Very simple ERC20 Token example
  */
-contract NumataToken is MintableToken, PausableToken, BurnableToken {
+contract NumataToken is MintableToken, BurnableToken {
 
     string public constant name = "NumataToken";
     string public constant symbol = "NMT";
