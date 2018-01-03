@@ -1,9 +1,10 @@
 pragma solidity ^0.4.17;
 
 
-import 'zeppelin-solidity/contracts/token/MintableToken.sol';
-import 'zeppelin-solidity/contracts/token/PausableToken.sol';
-import 'zeppelin-solidity/contracts/token/BurnableToken.sol';
+import "zeppelin-solidity/contracts/token/MintableToken.sol";
+import "zeppelin-solidity/contracts/token/PausableToken.sol";
+import "zeppelin-solidity/contracts/token/BurnableToken.sol";
+
 
 /**
  * @title NumataToken

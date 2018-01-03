@@ -1,7 +1,7 @@
 pragma solidity ^0.4.17;
 
 
-import './MultiSigWallet.sol';
+import "./MultiSigWallet.sol";
 
 
 /**
