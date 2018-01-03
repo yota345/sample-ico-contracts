@@ -13,6 +13,8 @@ contract NumataToken is MintableToken, PausableToken, BurnableToken {
 
     string public constant name = "NumataToken";
     string public constant symbol = "NMT";
+
+    // same as ether. (1ether=1wei * (10 ** 18))
     uint8 public constant decimals = 18;
 
     uint256 public constant INITIAL_SUPPLY = 10000 * (10 ** uint256(decimals));
