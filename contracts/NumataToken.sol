@@ -17,14 +17,4 @@ contract NumataToken is MintableToken, PausableToken, BurnableToken {
     // same as ether. (1ether=1wei * (10 ** 18))
     uint8 public constant decimals = 18;
 
-    uint256 public constant INITIAL_SUPPLY = 10000 * (10 ** uint256(decimals));
-
-    /**
-     * @dev Constructor that gives msg.sender all of existing tokens.
-     */
-    function NumataToken() public {
-        totalSupply = INITIAL_SUPPLY;
-        balances[msg.sender] = INITIAL_SUPPLY;
-    }
-
 }

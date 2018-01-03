@@ -14,6 +14,7 @@ contract NumataCrowdsale is CappedCrowdsale, RefundableCrowdsale, Pausable {
         uint256 _rate,
         uint256 _goal,
         uint256 _cap,
+        uint256 _initialFundBalance,
         address _wallet
     )
         public
@@ -25,6 +26,8 @@ contract NumataCrowdsale is CappedCrowdsale, RefundableCrowdsale, Pausable {
         //As goal needs to be met for a successful crowdsale
         //the value needs to less or equal than a cap which is limit for accepted funds
         require(_goal <= _cap);
+
+        token.mint(wallet, _initialFundBalance);
     }
 
     function createTokenContract() internal returns (MintableToken) {
