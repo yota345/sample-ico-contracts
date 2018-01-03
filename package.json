@@ -12,6 +12,7 @@
   "author": "Yota Numata",
   "license": "PRIVATE USUAGE ONLY",
   "dependencies": {
+    "fs": "0.0.1-security",
     "zeppelin-solidity": "^1.5.0"
   }
 }
